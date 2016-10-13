@@ -29,4 +29,9 @@ public class CalculatorTest {
 	public void testNewlineBetweenNumbers() {
 		assertEquals(6, Calculator.add("1\n2,3"));
 	}
+
+	@Test
+	public void testGreaterThan1000() {
+		assertEquals(4, Calculator.add("1,1002,3"));
+	}
 }
