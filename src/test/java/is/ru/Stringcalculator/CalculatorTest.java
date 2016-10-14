@@ -34,4 +34,9 @@ public class CalculatorTest {
 	public void testGreaterThan1000() {
 		assertEquals(4, Calculator.add("1,1002,3"));
 	}
+
+	@Test(expected = RuntimeException.class)
+	public void testNegative() {
+		assertEquals(-3, Calculator.add("4,-3,6,5"));
+	}
 }
